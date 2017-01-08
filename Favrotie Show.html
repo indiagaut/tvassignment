@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://images7.alphacoders.com/441/441644.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/assets/jeff.png">
+    <h1></h1>
+    <ul>
+      <li><a href="#">History</a></li>
+      <li><a href="#">Episodes</a></li>
+      <li><a href="#">Synoposis</a></li>
+      <li><a href="#">Timeline</a></li>
+    </ul>
+  </header>
+
+  <article>
+    <h2><i>Rugrats</i></h2>
+    <p>Rugrats is an American animated television seriesfor Nickelodeon. The show focuses on a group of toddlers, most prominently Tommy, Chuckie, twins Phil and Lil, and Angelica, and their day-to-day lives, usually involving common life experiences that become adventures in the babies' imaginations. Adults in the series are almost always unaware of what the children are up to.</p>
+    <button>Cast</button><button>Episodes</button><button>Watch</button>
+  </article>
+  
+  <article>
+    <h2><i>Doug</i></h2>
+    <p>Doug is an American animated sitcom created by Jim Jinkins. The show focuses on the early adolescent life of its title character, Douglas "Doug" Funnie, who experiences common predicaments while attending school in his new hometown of Bluffington. Doug narrates each story in his journal, and the show incorporates many imagination sequences. The series addresses numerous topics, including trying to fit in, platonic and romantic relationships, self-esteem, bullying, and rumors. Numerous episodes center on Doug's attempts to impress his classmate and crush, Patti Mayonnaise</p>
+    <button>Cast</button><button>Episodes</button><button>Watch</button>
+  </article>
+
+  <article>
+    <h2><i>Hey Arnold!</i></h2>
+    <p>Hey Arnold! is an American animated television series created by Craig Bartlett that aired on Nickelodeon from October 7, 1996, to June 8, 2004. The show centers on a fourth grader named Arnold, who lives with his grandparents in an inner-city boarding house. Episodes center on his experiences navigating big city life while dealing with the problems he and his friends encounter.</p>
+    <button>Cast</button><button>Episodes</button><button>Watch</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
